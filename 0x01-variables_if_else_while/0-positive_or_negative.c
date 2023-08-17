@@ -3,7 +3,11 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
+/** 
+ * main - start point 
+ *  Description: Get a random number and print the number
+ * and if it is positive, negative, or zero
+ */
 int main(void)
 {
 	int n;
@@ -12,11 +16,11 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 	if (n > 0)
-		printf("%i is positive", n);
+		printf("%i is positive ", n);
 	else if (n == 0)
-		printf("%i is zero", n);
+		printf("%i is zero ", n);
 	else
-		printf("%i is negative", n);
+		printf("%i is negative ", n);
 
 	return (0);
 }
